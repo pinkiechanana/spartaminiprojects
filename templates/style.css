@@ -164,3 +164,9 @@ button:hover, a:hover {
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
