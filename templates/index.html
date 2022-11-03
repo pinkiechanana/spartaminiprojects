@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue';
+        }
+
+        .img {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://newevolutiondesigns.com/images/freebies/4k-space-wallpaper-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            scroll-snap-align: start;
+        }
+
+        .img-text {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            color: white;
+            font-size: 40px;
+        }
+
+        h1 {
+            background: linear-gradient(to right, rgb(199, 219, 245), rgb(242, 243, 248));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        );
+            pointer-events: none;
+            animation: fade ease-in 3s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+        .heading {
+            position: absolute;
+            top: 250px;
+            left: 70px;
+        }
+
+        .paragraph {
+            margin-left: 70px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .img2 {
+            width: 100%;
+            height: 325px;
+            background-image: url("");
+            background-size: cover;
+            margin-right: 70px;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #left_to_right_effect {
+            width: 100;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .one {
+            background-color: #181818;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .two {
+            background-image: linear-gradient(rgba(0.1, 1, 1, 0.2), rgba(0.1, 1, 0, 0.1));
+            min-height: 32vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .three {
+            background-image: linear-gradient(rgba(0.1, 1, 1, 0.2), rgba(0.1, 1, 0, 0.1));
+            min-height: 68vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+        }
+
+        .four {
+            background-image: linear-gradient(rgba(0.1, 1, 1, 0.2), rgba(0.1, 1, 0, 0.1));
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .five {
+            background-image: linear-gradient(rgba(0.1, 1, 1, 0.2), rgba(0.1, 1, 0, 0.1));
+            min-height: 80vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .six {
+            background-image: linear-gradient(rgba(0.1, 1, 1, 0.2), rgba(0.1, 1, 0, 0.1));
+            min-height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            margin: auto;
+            padding-bottom: 20px;
+            border: 2px;
+        }
+
+        .card-1 {
+            display: flex;
+            border: 2px;
+        }
+
+        .card-image-1 {
+            width: 30%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: black;
+        }
+
+        .card-image-1 img {
+            width: 70%;
+            min-height: 70%;
+        }
+
+        .card-text-1 {
+            width: 70%;
+            padding: 10px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+
+        nav {
+
+        }
+
+        nav img {
+            width: 150px;
+            height: 150px;
+            padding-top: 20px;
+        }
+
+        .maintitle {
+            flex: 1;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .maintitle a {
+            color: rgb(10, 6, 6);
+            text-decoration: none;
+            font-size: 90px;
+        }
+
+        /* this is underline effect when the cursor hovers over the title */
+        /*
+        .maintitle::after {
+            content: '';
+            width: 0%;
+            height: 6px;
+            background: #090707;
+            display: block;
+            margin: auto;
+            transition: 1s;
+        }
+
+        .maintitle:hover::after {
+            width: 100%;
+        }
+        */
+        /* up to here (hover effect) */
+
+        .button-down-1 {
+            display: none;
+        }
+
+        .button-down-1:hover + .button-down-1 {
+            display: inline-block;
+        }
+
+        /* member profile cards */
+
+        .profile-card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .profile-title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        profile-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        profile a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        button:hover, a:hover {
+            opacity: 0.7;
+        }
+
+        /* end of member profile card */
+
+        .comment-box {
+            width: 90%;
+            color: black;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function () {
+            const EFFECT = document.querySelector('#left_to_right_effect');
+
+            window.addEventListener('scroll',scrollEffect);
+
+            function scrollEffect () {
+                if(window.scrollY>=500) {
+                    EFFECT.style.opacity = '1';
+                    EFFECT.style.transform = 'translateX(0px)';
+                    EFFECT.style.transition = '1s ease-in-out';
+                }
+                else {
+                    EFFECT.style.opacity = '0';
+                    EFFECT.style.transform = 'translateX(-50px)';
+                }
+            }
+            scrollEffect();
+        }
+        $(document).ready(function () {
+            show_comment();
+            $('#part3-box-1').hide()
+            $('#part3-box-2').hide()
+            $('#part3-box-3').hide()
+            $('#part3-box-4').hide()
+            $('#part3-box-5').hide()
+        })
+
+        function save_comment() {
+            let name = $('#name').val()
+            let comment = $('#comment').val()
+
+            $.ajax({
+                type: "POST",
+                url: "/guest",
+                data: {'name_give': name, 'comment_give': comment},
+                success: function (response) {
+                    alert(response["msg"])
+                    window.location.reload()
+                }
+            });
+        }
+
+        function show_comment() {
+            $('#comment-list').empty()
+            $.ajax({
+                type: "GET",
+                url: "/guest",
+                data: {},
+                success: function (response) {
+                    let rows = response['comments']
+                    for (let i = 0; i < rows.length; i++) {
+                        let name = rows[i]['name']
+                        let comment = rows[i]['comment']
+
+                        let temp_html = `<div class="card">
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p>${comment}</p>
+                                                    <footer class="blockquote-footer">${name}</footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>`
+                        $('#comment-list').append(temp_html)
+                    }
+                }
+            });
+        }
+
+        let likes = 0
+
+        function like_count() {
+            likes = likes + 1
+            $.ajax({
+                type: "POST",
+                url: "/like",
+                data: {'like_give': likes},
+                success: function (response) {
+                    console.log(likes)
+                }
+            });
+        }
+
+        function showing1() {
+            $('#part3-box-2').hide()
+            $('#part3-box-3').hide()
+            $('#part3-box-4').hide()
+            $('#part3-box-5').hide()
+            $('#part3-box-1').show()
+        }
+
+        function showing2() {
+            $('#part3-box-1').hide()
+            $('#part3-box-3').hide()
+            $('#part3-box-4').hide()
+            $('#part3-box-5').hide()
+            $('#part3-box-2').show()
+        }
+
+        function showing3() {
+            $('#part3-box-1').hide()
+            $('#part3-box-2').hide()
+            $('#part3-box-4').hide()
+            $('#part3-box-5').hide()
+            $('#part3-box-3').show()
+        }
+
+        function showing4() {
+            $('#part3-box-1').hide()
+            $('#part3-box-2').hide()
+            $('#part3-box-3').hide()
+            $('#part3-box-5').hide()
+            $('#part3-box-4').show()
+        }
+
+        function showing5() {
+            $('#part3-box-1').hide()
+            $('#part3-box-2').hide()
+            $('#part3-box-3').hide()
+            $('#part3-box-4').hide()
+            $('#part3-box-5').show()
+        }
+
+    </script>
+</head>
+<body>
+<div class="img"></div>
+<div class="img-text">
+    <h1>Non-Fungible Team</h1>
+    <h1>Captain Sol</h1>
+</div>
+
+<div class="container">
+    <section class="one">
+        <div id="left_to_right_effect">
+            <img src="https://w7.pngwing.com/pngs/532/201/png-transparent-nft-sign-nft-pixel-set-icon-thumbnail.png" alt="image" width="50%"/>
+            <div>
+                <h2 class="paragraph" style="color: white; font-size: 35px">NFT (Non-Fungible Team : 대체 불가능한 존재가 돼라!)</h2><br>
+                <h3 class="paragraph" style="color: white; font-size: 15px; font-family: 'Noto Sans', sans-serif;">저희는 대체 불가능한 토큰 NFT(Non-Fungible Token)와 같이 대체 불가능한 개발자를 목표로
+                    하는 팀 입니다!</h3><br>
+                <p class="paragraph" style="color: white; width: 85%">저희팀은 모두 외교형(NF)으로 구성되어 있습니다. 대체불가한 팀장은 재기발랄 활동가, 대체불가한 팀원
+                    2명은 열정적인 중재자, 그리고 대체불가한 팀원 1명은 정의로운 사회운동가까지. 어느 곳에서도 스며들고 녹아들어 함께 하는 협업을 위한 완벽한 시너지를 만듭니다. 개발자 붐이
+                    일어난 지 수년 째 입니다. 여러 교육 기관을 통해 수요가 충족 되고 있지만 역량 있는 개발자에 대한 수요는 턱 없이 부족한 상황에 대체 가능한 역량의 개발자가 아닌, 대체
+                    불가능한 역량의 개발자가 되기 위해 모인 저희 팀이 뭉쳐 해내보려고 합니다! 재기발랄하고 열정적인 사회운동가를 소개합니다.</p>
+            </div>
+        </div>
+    </section>
+    <section class="two">
+
+    </section>
+    <section class="three">
+
+    </section>
+    <section class="four">
+
+    </section>
+    <section class="five">
+        <div class="comment-box">
+            <div class="mb-3">
+                <label for="name" class="form-label">닉네임&nbsp;</label>
+                <input type="email" class="form-control" id="name" placeholder="nickname"
+                       style="width: 295px; font-size: 17px; border: black 6px;">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="comment" class="form-label">댓글&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <textarea class="form-control" id="comment" cols="40" rows="5"
+                          style="font-size: 17px" placeholder="comment here"></textarea>
+            </div>
+            <div style="text-align: center">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    <button onclick="like_count()">좋아요</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <button onclick="save_comment(),show_comment()">댓글 남기기</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="six">
+
+    </section>
+</div>
+</body>
+</html>
